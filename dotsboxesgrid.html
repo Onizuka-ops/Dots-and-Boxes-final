@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dots and Boxes - Play</title>
+    <link rel="stylesheet" href="game-style.css">
+</head>
+<body>
+
+  <div class="game-container">
+    <div class="game-header">
+      <h1 class="game-title">Dots and Boxes</h1>
+
+      <div class="scoreboard">
+        <div class="player-score p1-score">
+          <div class="player-label">Player 1</div>
+          <div class="score-value" id="score-p0">0</div>
+        </div>
+        <div class="turn-indicator" id="turn">Player 1's Turn</div>
+        <div class="player-score p2-score">
+          <div class="player-label">Player 2</div>
+          <div class="score-value" id="score-p1">0</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="board-wrapper">
+      <div id="board"></div>
+    </div>
+
+    <div class="game-footer">
+      <div id="status" class="status-message"></div>
+      <button id="reset" class="reset-btn">New Game</button>
+    </div>
+  </div>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>

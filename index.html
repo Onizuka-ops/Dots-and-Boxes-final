@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dots and Boxes</title>
+  <link rel="stylesheet" href="game-style.css">
+</head>
+<body>
+
+<div class="menu-container">
+  <div class="menu-content">
+    <h1 class="menu-heading">Dots and Boxes</h1>
+    <p class="menu-subtitle">Choose your grid size</p>
+
+    <div class="menu-buttons">
+      <button class="menu-btn" onclick="startGame(4)">
+        <span class="btn-size">4 × 4</span>
+        <span class="btn-label">Quick Game</span>
+      </button>
+      <button class="menu-btn" onclick="startGame(7)">
+        <span class="btn-size">7 × 7</span>
+        <span class="btn-label">Standard</span>
+      </button>
+      <button class="menu-btn" onclick="startGame(11)">
+        <span class="btn-size">11 × 11</span>
+        <span class="btn-label">Challenge</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function startGame(size) {
+    window.location.href = `dotsboxesgrid.html?size=${size}`;
+  }
+</script>
+
+</body>
+</html>
